@@ -1,0 +1,96 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+.row.enquireNow {
+  max-width: 1000px;
+  justify-content: space-around;
+}
+.col-6.name,
+.col-6.email,
+.col-6.number,
+.col-6.select,
+.col-6.message,
+.col-6.address {
+  width: 45%;
+  margin: auto;
+}
+.col-12.companyName {
+  width: 95%;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit.button,
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+  margin-right: 0px;
+  border-radius: 20px;
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit.button:hover {
+  margin-right: 0px;
+  border-radius: 20px;
+  border: 1px solid #e42d64;
+  background-color: transparent;
+  color: #e42d64;
+}
+
+.col-2.submit {
+  text-align: center;
+}
+
+span.wpcf7-spinner {
+  display: none;
+}
+
+.serviceForm {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.serviceForm > * {
+  width: 40%;
+  margin-top: 20px;
+}
+.serviceSubmit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 48em) {
+  /*************** ADD MOBILE ONLY CSS HERE 768  ***************/
+
+  .row.enquireNow {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .col-6.name,
+  .col-6.email,
+  .col-6.number,
+  .col-6.select,
+  .col-6.message,
+  .col-6.address,
+  .col-12.companyName {
+    width: 80%;
+    margin: auto;
+  }
+
+  .serviceForm {
+    flex-flow: column;
+    align-items: center;
+  }
+  .serviceForm > * {
+    width: 65%;
+  }
+  .visionBanner p {
+    font-size: 18px;
+  }
+  .visionBanner h2 {
+    font-size: 55px;
+  }
+}
